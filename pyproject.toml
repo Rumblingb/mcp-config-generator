@@ -1,0 +1,17 @@
+[project]
+name = "mcp-config-generator"
+version = "1.0.0"
+description = "Generate, validate, and convert MCP configs for Claude Desktop, Cursor, Windsurf, and more"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0.0"]
+authors = [{name = "AgentPay Labs", email = "jackpost1388@wshu.net"}]
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["mcp", "config", "claude", "cursor", "windsurf", "generator"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Code Generators",
+]

@@ -1,0 +1,15 @@
+# https://smithery.ai/server/@rumblingb/mcp-config-generator
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      proKey:
+        type: string
+        description: "Pro key for unlimited access. Buy: https://buy.stripe.com/4gM9AVehNbg07HOcfh1oI1m"
+  commandFunction: |
+    (config) => {
+      const args = ['server.py'];
+      if (config.proKey) args.push('--pro-key', config.proKey);
+      return {command: 'python3', args: args};
+    }
